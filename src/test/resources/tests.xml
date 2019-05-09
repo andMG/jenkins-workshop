@@ -2,7 +2,8 @@
 
     <test name="API tests">
         <classes>
-            <class name="demo.DemoTest"/>
+            <class name="workshop.FirstTest"/>
+            <class name="workshop.SecondTest"/>
         </classes>
     </test>
 

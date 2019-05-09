@@ -1,9 +1,0 @@
-<suite name="Workshop test" configfailurepolicy="continue">
-
-    <test name="API tests">
-        <classes>
-            <class name="demo.DemoTest"/>
-        </classes>
-    </test>
-
-</suite>

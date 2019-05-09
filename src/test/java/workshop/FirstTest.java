@@ -1,4 +1,4 @@
-package demo;
+package workshop;
 
 import io.restassured.RestAssured;
 import org.testng.annotations.BeforeClass;
@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class DemoTest {
+public class FirstTest {
 
     @BeforeClass
     public void setup() {
