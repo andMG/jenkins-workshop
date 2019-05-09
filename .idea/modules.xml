@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jenkinsWorkshop.iml" filepath="$PROJECT_DIR$/.idea/modules/jenkinsWorkshop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jenkinsWorkshop_main.iml" filepath="$PROJECT_DIR$/.idea/modules/jenkinsWorkshop_main.iml" group="jenkinsWorkshop" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jenkinsWorkshop_test.iml" filepath="$PROJECT_DIR$/.idea/modules/jenkinsWorkshop_test.iml" group="jenkinsWorkshop" />
+    </modules>
+  </component>
+</project>

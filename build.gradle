@@ -1,0 +1,30 @@
+group 'jenkinsWorkshop'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'org.testng', name: 'testng', version: '6.14.3'
+    testCompile 'io.rest-assured:rest-assured:3.1.1'
+}
+
+task demoTask (type: Test) {
+
+    testLogging {
+        events "started", "passed", "skipped", "failed", "standardError"
+    }
+
+    useTestNG {
+        configFailurePolicy 'continue'
+        suites './src/test/resources/tests.xml'
+    }
+
+    reports.html.setDestination(file("$buildDir/reports/workshop"))
+}
