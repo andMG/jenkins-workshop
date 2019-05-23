@@ -2,16 +2,20 @@ pipeline {
         agent any
 
         stages {
-            git add
-            stage('build'){
+            stage('Checkout') {
                 steps {
-                    sh './gradlew build'
+                    git 'https://github.com/andMG/jenkins-workshop.git'
                 }
             }
             stage('Test') {
                 steps {
                     sh './gradlew demoTask'
                 }
+            }
+        }
+        post {
+            always {
+                junit 'build/*/demoTask/*.xml'
             }
         }
 }
