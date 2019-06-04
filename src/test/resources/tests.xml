@@ -4,6 +4,8 @@
         <classes>
             <class name="workshop.FirstTest"/>
             <class name="workshop.SecondTest"/>
+            <class name="workshop.ThirdTest"/>
+            <class name="workshop.FourthTest"/>
         </classes>
     </test>
 
