@@ -15,7 +15,7 @@ public class FirstTest {
     }
 
     @Test
-    public void statusCodeVerification() {
+    public void statusCodeVerificationFirst() {
         given()
                 .param("units", "imperial")
                 .param("origins", "Washington,DC")
